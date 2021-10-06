@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+:root {
+  --lg-font: 'Cinzel', serif;
+  --sm-font: 'Poppins', sans-serif;
+  --pink: #e5345b;
+  --black: #212529;
+  --white: #ffffff;
+  --light-grey: rgb(210, 210, 210);
+  --grey: ;
+  /* --pink: #00a7e1; */
+}
+body {
+  font-family: var(--sm-font);
+}
+.bg-primary {
+  background-color: var(--pink) !important;
+}
+.btn-pink-outline {
+  background: var(--white);
+  color: var(--pink);
+  border: 1px solid var(--pink);
+}
+.btn-pink-outline:hover {
+  background: var(--pink);
+  color: var(--white);
+  border: 1px solid var(--pink);
+  transition: 0.4s linear;
+}
+/* navbar */
+.navbar {
+  -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img {
+  width: 1.875rem;
+}
+.navbar-brand span {
+  letter-spacing: 0.125rem;
+  font-family: var(--lg-font);
+}
+.nav-link:hover {
+  color: var(--pink) !important;
+}
+/* title */
+.title h2::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 50px;
+  background-color: var(--pink);
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/********** FOOTER ***********/
+footer .brand {
+  font-size: 1.125rem;
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--pink) !important;
+}
+/************ ABOUT ***********/
+.about-banner {
+  min-height: 90vh;
+  background: url(../images/about-banner.jpg) center/cover no-repeat;
+}
+.about-banner h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: var(--lg-font);
+}
+#about p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
